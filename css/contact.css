@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Vazir sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navigation */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #636e72; */
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.navigation .nav-right,
+.navigation .nav-left {
+  display: flex;
+}
+
+.navigation li {
+  padding: 0.7rem 1rem;
+  transition: all ease-in-out 0.4s;
+}
+
+.navigation li:hover {
+  background-color: #b2bec3;
+  cursor: pointer;
+}
+
+.navigation li:hover a {
+  color: black;
+}
+
+.navigation a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* sub-nav */
+
+.sub-nav {
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.sub-nav p {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.sub-nav h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem;
+  text-shadow: -3px 3px 2px rgba(150, 150, 150, 1);
+}
+
+/* header - cinema */
+
+.cinema {
+  background-image: url("./../images/contact.jpg");
+  background-size: cover;
+  height: 540px;
+  max-width: 100%;
+  filter: opacity(0.9);
+  position: relative;
+  text-align: center;
+}
+
+.cinema h2 {
+  font-size: 2.5rem;
+  color: #55efc4;
+  text-shadow: -1px 1px 2px rgba(150, 150, 150, 1);
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 20px;
+}
+
+/* main - about */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3436;
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3436;
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+.contact hr {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 95%;
+  align-self: center;
+  margin: 1.5rem;
+}
+
+.contact p {
+  font-size: 1.3rem;
+  color: #2d3436;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  padding: 0rem 3rem;
+}
+
+#phone div {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #2d3436;
+  padding: 1rem 2rem;
+}
+
+/* contact - form  */
+
+#forms form {
+  background-color: #dfe6e973;
+  border-radius: 0.3rem;
+  box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  padding: 2rem 3rem;
+}
+
+#forms div:first-child {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+#forms #fullnames {
+  flex-basis: 50%;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+#forms #fullnames label,
+#forms #emails label,
+#forms #comments label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#forms #fullnames input,
+#forms #emails input,
+#forms #comments textarea {
+  width: 100%;
+  border-radius: 0.2rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+
+#forms #fullnames input:focus,
+#forms #fullnames input:hover,
+#forms #emails input:focus,
+#forms #emails input:hover,
+#forms #comments textarea:focus,
+#forms #comments textarea:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#forms #emails {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+#forms #comments {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+#forms button {
+  width: 5rem;
+  border: none;
+  outline: none;
+  background-color: #2980b9;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#forms button:hover {
+  opacity: 0.8;
+}
+
+/* #forms>div {
+        display: flex;
+        flex-direction: column;
+    } */
+
+/* footer */
+
+footer {
+  display: flex;
+  background-color: #2d3436;
+  color: white;
+  padding: 3rem 2rem 1rem;
+}
+
+footer hr {
+  border: 1px solid #b2bec3;
+  margin: 2rem 0;
+}
+
+footer .right-footer {
+  flex-basis: 40%;
+  margin-left: 2rem;
+}
+
+footer .right-footer span {
+  font-size: 1.5rem;
+}
+
+footer .right-footer p {
+  line-height: 1.4;
+}
+
+footer .right-footer h4 {
+  font-size: 0.8rem;
+  margin-top: 2.5rem;
+}
+
+footer .middle-footer {
+  flex-basis: 30%;
+  margin-left: 2rem;
+}
+
+footer .middle-footer span {
+  font-size: 1.5rem;
+}
+
+footer .middle-footer form input {
+  outline: none;
+  border: none;
+  padding: 0.5rem 3rem;
+}
+
+footer .middle-footer form button {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+footer .middle-footer form button:hover {
+  opacity: 0.7;
+}
+
+footer .left-footer {
+  flex-basis: 30%;
+}
+
+footer .left-footer > span {
+  font-size: 1.5rem;
+}
+
+footer .left-footer .call {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+footer .left-footer .call i {
+  font-size: 1.3rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+footer .left-footer .call i:hover {
+  color: #ddd;
+}
+
+footer .left-footer .call i:last-child {
+  margin-left: 0;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1250px) {
+  footer {
+    flex-wrap: wrap;
+  }
+  footer .right-footer {
+    flex-basis: 100%;
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+  footer .middle-footer {
+    flex-basis: 50%;
+  }
+  footer .left-footer {
+    flex-basis: 45%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navigation {
+    flex-direction: column;
+    position: static;
+  }
+  .nav-right {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-left {
+    flex-direction: column;
+    text-align: center;
+  }
+  #forms div:first-child {
+    flex-direction: column;
+  }
+  #forms #fullnames {
+    margin-left: 0;
+  }
+  footer .middle-footer {
+    flex-basis: 100%;
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+  footer .left-footer {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .middle-footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .middle-footer form button {
+    margin-top: 0.3rem;
+  }
+}
